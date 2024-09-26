@@ -1,0 +1,23 @@
+.deliveredOrders-container {
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.deliveredOrders-search-input{
+  width: 40%;
+}
+
+  
+@media (max-width: 768px) {
+  .deliveredOrders-container {
+    padding: 50px 15px;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container{
+    width: 100%;
+  }
+}

@@ -1,0 +1,480 @@
+
+.hero-img{
+  width: 100%;
+  height: 80vh;
+  background-image: url('../../assets/boys.avif') ; 
+  background-size: cover; 
+  background-position: center; 
+  position: relative; 
+}
+
+.overlay-content{
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  background-color: transparent;
+  width: 100%;
+}
+
+.overlay-content img {
+  background-color: transparent;
+  height: 20rem;
+  box-shadow: 3px 3px 15px -5px;
+
+}
+
+.overlay-content h1 {
+  background-color: transparent;
+  color: rgb(248, 172, 8);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0rem 15rem;
+
+}
+
+.overlay-content button{
+  padding: 5px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.overlay-content button:hover{
+  background-color: white;
+  color: black;
+}
+
+.upper-product-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 11.5rem 0rem 11.5rem;
+}
+
+
+.upper-product-container h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(78, 78, 78);
+}
+
+.search-container{
+  display: flex;
+  width: 40%;
+}
+
+.search-container input{
+  border: 1px solid gray;
+}
+
+.search-container .search-icon{
+ font-size: 1.5rem;
+ cursor: pointer;
+ background: none;
+ border: none;
+ transition: 0.5s ease;
+}
+
+.search-container .search-icon:hover{
+  transform: scale(1.2);
+}
+
+.upper-product-container button{
+  border: none;
+  padding: 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(78, 78, 78);
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+ 
+}
+
+.shop-icon{
+  font-size: 1.8rem;
+}
+
+
+.upper-product-container button:hover{
+  transform: scale(1.05);
+}
+
+
+.product-container {
+  margin: 5rem 10rem 0rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.single-product-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+
+.hero-section1 {
+  padding: 0rem 10rem 5rem 10rem;
+}
+
+.hero-section1-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero-item {
+  height: 10rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.hero-item h2 {
+  font-size: 1.5rem;
+  color: #333; 
+  margin-bottom: 10px;
+}
+
+.hero-item p {
+  font-size: 1rem;
+  color: #666; 
+  margin: 0;
+}
+
+
+.hero-section2{
+  /* width: 100%; */
+  height: 60vh;
+  background-image: url('../../assets/women.jpg') ; 
+  background-size: cover; 
+  background-position: center; 
+  position: relative; 
+  margin: 5rem 10rem 0rem 10rem;
+
+}
+
+.trending-container{
+  padding: 5rem 10rem 5rem 10rem;
+}
+
+.trending-container h1{
+  font-size: 1.6rem;
+}
+
+.trending-products{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+.moving-images{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  margin-bottom: 5rem;
+}
+
+.moving-images img{
+  width: 100%;
+  height: 90%;
+}
+
+@media (max-width: 1670px) {
+  .product-container {
+    margin: 5rem 3rem 0rem 3rem;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+  }
+
+  .trending-container{
+    padding: 5rem 3rem 5rem 3rem;
+  }
+
+  .hero-section2{
+    margin: 5rem 3rem 0rem 3rem;
+  }
+  .upper-product-container{
+    padding: 4rem 5rem 0rem 5rem;
+  }
+
+  .moving-images{
+    margin-bottom: 3rem;
+  }
+  .hero-section1 {
+    padding: 0rem 10rem 3rem 10rem;
+  }
+  
+}
+
+
+@media (max-width: 1450px) {
+  .product-container {
+    margin: 5rem 3rem 0rem 3rem;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 10px;
+  }
+
+  .trending-container{
+    padding: 5rem 3rem 5rem 3rem;
+  }
+
+  .hero-section1 {
+    padding: 0rem 5rem 5rem 5rem;
+  }
+
+}
+
+@media (max-width: 1150px) {
+  .product-container {
+    margin: 5rem 3rem 0rem 3rem;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+  }
+
+  .hero-img{
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .overlay-content{
+    top: 40%; 
+    left: 50%; 
+    width: 100%;
+    height: 50%;
+  }
+  
+  .overlay-content img {
+    height: 100%;
+  }
+
+  .overlay-content h1{
+    font-size: 16px;
+    padding: 0rem 5rem;
+  }
+
+  .overlay-content button{
+    font-size: 16px;
+  }
+
+  .trending-container{
+    padding: 5rem 3rem 5rem 3rem;
+  }
+  .trending-products{
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+  }
+  .hero-section2{
+    height: 50vh;
+    margin: 5rem 3rem 0rem 3rem;
+
+  }
+
+  .moving-images{
+    margin-bottom: 2rem;
+  }
+  .hero-section1 {
+    padding: 0rem 2rem 3rem 3rem;
+  }
+  
+}
+
+@media (max-width: 1020px) {
+  .product-container {
+    margin: 5rem 1rem 0rem 1rem;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+  }
+
+  .trending-container{
+    padding: 5rem 1rem 3rem 1rem;
+  }
+  .trending-products{
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+  }
+
+  .hero-section2{
+    background-image: url('../../assets/women.jpg') ; 
+    margin: 5rem 1rem 0rem 1rem;
+    height: 20rem;
+  }
+
+  .search-container{
+    width: 50%;
+  }
+  .hero-section1 {
+    padding: 0rem 3rem 2rem 3rem;
+  }
+  
+.hero-item h2{
+  font-size: 1.2rem;
+}
+.hero-item p{
+  font-size: 0.9rem;
+}
+
+}
+
+@media (max-width: 800px) {
+  .moving-images{
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2rem;
+  }
+  .upper-product-container{
+    padding: 4rem 2rem 0rem 2rem;
+  }
+
+  .search-container input{
+    font-size: 1rem;
+  }
+  .search-container .search-icon{
+    font-size: 1.2rem;
+  }
+  .upper-product-container .shop-now-btn{
+    font-size: 1rem;
+  }
+  .upper-product-container .shop-now-btn .shop-icon{
+    font-size: 1.5rem;
+  }
+
+  .hero-section1 {
+    padding: 0rem 1rem 2rem 1rem;
+  }
+
+  .hero-section1-content {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+  }
+
+  .hero-item {
+    height: 5rem;
+    padding: 10px;
+  }
+.hero-item h2{
+  font-size: 1.2rem;
+}
+.hero-item p{
+  font-size: 0.9rem;
+}
+
+}
+
+@media (max-width: 600px) {
+  .overlay-content{
+    top: 40%; 
+    left: 50%; 
+    width: 100%;
+    height: 35%;
+  }
+
+  .hero-img{
+    width: 100%;
+  }
+
+  .hero-section2{
+    height: 18rem;
+    margin: 5rem 0rem 0rem 0rem;
+  }
+
+
+  .search-container{
+    width: 65%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .product-container {
+    margin: 2rem 0.5rem 0rem 0.5rem;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+  }
+  
+  .trending-container{
+    padding: 2rem 0.5rem 3rem 0.5rem;
+  }
+
+
+  .trending-container h1{
+    margin-left: 1rem;
+    font-size: 16px;
+  }
+
+  .trending-products{
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+  }
+
+  .hero-img{
+    width: 100%;
+    height: 30vh;
+  }
+
+  .overlay-content{
+    top: 35%; 
+    left: 50%; 
+    width: 100%;
+    height: 35%;
+  }
+  .overlay-content h1{
+    font-size: 10px;
+    padding: 0rem 2rem;
+  }
+
+  .overlay-content button{
+    font-size: 10px;
+  }
+
+  .hero-section2{
+    height: 15rem;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .moving-images{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .upper-product-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem 0rem 1rem;
+  }
+  .search-container{
+    width: 90%;
+  }
+  .hero-section1-content {
+    grid-template-columns: repeat(1,2fr);
+  }
+}

@@ -1,0 +1,134 @@
+.checkout-container {
+    padding: 5rem 5rem 0rem 5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .checkout-container h2 {
+    text-align: center;
+  }
+
+  .checkout-left-content{
+    width: 30%;
+    margin-bottom: 2rem;
+  }
+  .order-summary{
+    padding: 15px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-summary h3{
+    text-align: center;
+  }
+
+  .order-item-container{
+    height: 28rem;
+    overflow-x: hidden;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  
+  .order-item-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+
+
+  
+.order-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .order-item img{
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  .order-total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .payment-method form div {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  
+  .checkout-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .place-order-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cancel-order{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+
+  @media (max-width: 1250px) {
+    .checkout-container {
+      padding: 5rem 1rem 0rem 1rem;
+    }
+  .checkout-left-content{
+    width: 40%;
+
+  }
+  .order-summary{
+    width: 60%;
+  }
+  }
+
+
+  @media (max-width: 800px) {
+    .checkout-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .checkout-left-content{
+      width: 100%;
+  
+    }
+    .order-summary{
+      width: 96%; 
+    }
+  }
+
+  @media (max-width: 600px) {
+    .order-summary{
+      width: 94%; 
+    }
+  }
+
+  @media (max-width: 450px) {
+    .order-summary{
+      width: 91%; 
+    }
+  }
+  @media (max-width: 400px) {
+    .order-item {
+      display: block;
+    }
+  }

@@ -1,0 +1,21 @@
+.login-container{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0rem 1rem;
+  }
+
+.forgot-password, .haveaccount{
+  text-align: center;
+}
+
+
+@media (max-width: 800px) {
+
+  .forgot-password{
+    margin-top: 1rem;
+  }
+.haveaccount{
+  display: flex;
+  flex-direction: column;
+}
+}

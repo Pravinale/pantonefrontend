@@ -1,0 +1,129 @@
+.trendings-container {
+    padding: 60px 20px 20px 20px;
+  }
+  
+  .trending-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .trending-form input,
+  .trending-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .trending-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .trending-products-list {
+    display: grid;
+    padding: 0rem 10rem;
+    grid-template-columns: repeat(4, 2fr);
+    justify-items: center;
+  }
+  
+  .trending-product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .trending-product img {
+    width: 100%;
+    height: auto;
+  }
+
+  .trending-edit-btn, .trending-delete-btn{
+    margin-top: 0.5rem;
+    padding: 5px;
+    width: 30%;
+    font-size: 1rem;
+  }
+  
+
+@media (max-width: 1250px) {
+    .trending-products-list {
+      padding: 0rem 10rem;
+      grid-template-columns: repeat(3, 2fr);
+    } 
+}
+
+@media (max-width: 1030px) {
+  .trending-products-list {
+    padding: 0rem 5rem;
+    grid-template-columns: repeat(3, 2fr);
+  } 
+
+  .trending-edit-btn{
+    width: 100%;
+  }
+
+  .trending-delete-btn{
+    width: 100%;
+  }
+}
+
+@media (max-width: 870px) {
+  .trending-products-list {
+    padding: 0rem 3rem;
+    grid-template-columns: repeat(3, 2fr);
+  } 
+  .trending-product {
+    width: 150px;
+  }  
+
+}
+
+@media (max-width: 650px) {
+  .trending-products-list {
+    padding: 0rem 3rem;
+    grid-template-columns: repeat(3, 2fr);
+  } 
+  .trending-product {
+    width: 120px;
+  }   
+
+  
+}
+
+@media (max-width: 560px) {
+  .trending-products-list {
+    padding: 0rem 1rem;
+    grid-template-columns: repeat(3, 2fr);
+  } 
+  .trending-product {
+    width: 110px;
+  }   
+}
+
+@media (max-width: 470px) {
+  .trending-products-list {
+    padding: 0rem 1rem;
+    grid-template-columns: repeat(2, 2fr);
+  } 
+  .trending-product {
+    width: 130px;
+  }   
+}
+
+@media (max-width: 370px) {
+  .trending-products-list {
+    padding: 0rem 1rem;
+    grid-template-columns: repeat(2, 2fr);
+  } 
+  .trending-product {
+    width: 100px;
+  }   
+}
